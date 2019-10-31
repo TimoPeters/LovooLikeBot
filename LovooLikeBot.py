@@ -8,7 +8,7 @@ login_email = loginData["email"]
 login_password = loginData["password"]
 
 # navigate to lovoo.com
-driver = webdriver.Chrome()
+driver = webdriver.Firefox()
 driver.get("https://de.lovoo.com/")
 print("navigate to Lovoo-Website")
 
