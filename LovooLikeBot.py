@@ -1,6 +1,7 @@
 from selenium import webdriver
 import time
 import json
+import getpass
 
 with open('LoginData.json') as file:
     loginData = json.load(file)
@@ -22,9 +23,11 @@ time.sleep(3)
 email_text_field = driver.find_element_by_name("authEmail")
 password_text_field = driver.find_element_by_name("authPassword")
 login_button_2 = driver.find_element_by_xpath("//form[@id='form']/div/div/button")
-email_text_field.send_keys(login_email)
+login_email_input = input("Email: ")
+email_text_field.send_keys(login_email_input)
 print("fill Email")
-password_text_field.send_keys(login_password)
+login_password_input = getpass.getpass()
+password_text_field.send_keys(login_password_input)
 print("fill Password")
 login_button_2.click()
 print("submit login formular")
