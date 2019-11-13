@@ -3,7 +3,7 @@
 Start by adding your Lovoo login data to LoginData.json.
 It should look similar to this:
 
- {"email":"example@example.com", "password":"password123" }
+ { "email":"example@example.com", "password":"password123" }
  
  Start the script with:
  python LovooLikeBot.py
